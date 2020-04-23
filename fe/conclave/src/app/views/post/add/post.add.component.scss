@@ -1,0 +1,38 @@
+.post-box{
+    border-radius: 3px;
+    padding: 5px 13px;
+    box-shadow: 0px 0px 3px grey;
+    margin-bottom:15px;
+  }
+  
+  .post-text{
+    resize: none;
+width: 100%;
+border: 1px solid darkgray;;
+border-radius: 3px;
+margin: 11px 0;
+padding: 5px;
+
+&:focus {
+ border: 1px solid white;
+  box-shadow: 0 0 2px green;
+
+}
+  }
+  
+  .post-username{
+    font-weight:bold;
+  }
+
+  .post-add-attachment{
+      padding:0;
+    li{
+        display:inline;
+        margin: 2px 5px;
+    }
+  }
+  .post-error{
+    color: red;
+font-size: small;
+  }
+  

@@ -1,0 +1,18 @@
+<div class="post-box">
+  <div>
+    <label class="post-username">{{post.username}}</label>
+    <label class="post-datetime"></label>
+  </div>
+  <p class="post-text" name="post-text">{{post.text}}</p>
+  <div class="post-attachment">
+    <ng-container *ngFor="let postitem of post.media">
+      <ul class="post-attachment-image" *ngIf="postitem.type == 'image'">
+        <li><img src="{{postitem.path}}"></li>
+      </ul>
+      <ul class="post-attachment-video" *ngIf="postitem.type == 'video'">
+        <li><video controls src="{{postitem.path}}"></video></li>
+      </ul>
+    </ng-container>
+    
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.navbar-container{
+    background:#90ee90;
+    .navbar{
+        z-index: 10;
+        max-width:1280px;
+        margin:0 auto;
+    }
+    .dropdown-menu{
+        min-width:0;
+    }
+}

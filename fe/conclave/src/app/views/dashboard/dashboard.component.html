@@ -1,0 +1,8 @@
+<div class="container dashboard">
+  <div class="post-add">
+    <app-post-add (postAddSuccess)='onPostAdd($event);'></app-post-add>
+  </div>
+    <ul class="post-list">
+      <li *ngFor="let post of postlist"><app-post-read [post]='post'></app-post-read></li>
+    </ul>
+</div>

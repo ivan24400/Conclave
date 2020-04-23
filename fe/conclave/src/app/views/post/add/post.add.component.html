@@ -1,0 +1,19 @@
+<div class="post-box">
+    <form (submit)='onPostSubmit($event)'>
+        <textarea class="post-text" name="text" placeholder="Post something !"></textarea>
+        <div class="post-attachment">
+          <div class="post-attached-files">
+            <ng-template #attachment_container></ng-template>
+          </div>
+          <div class="post-attachment-options">
+            <ul class="post-add-attachment">
+              <li><button type="button" class="btn btn-sm btn-outline-primary" (click)="addAttachment('av')">Audio/Video</button></li>
+              <li><button type="button" class="btn btn-sm btn-outline-success" (click)="addAttachment('img')">Image</button></li>
+              <li><button type="button" class="btn btn-sm btn-outline-warning" (click)="addAttachment('embed')">Embed media</button></li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-sm btn-primary" type="submit">Post</button>
+      </form>
+      <label class="post-error">{{post_add_error}}</label>
+</div>

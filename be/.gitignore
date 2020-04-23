@@ -1,0 +1,13 @@
+# .NET api
+/ConclaveAPI/.sonarqube/
+/ConclaveAPI/.vs/
+/ConclaveAPI/Conclave/bin/
+/ConclaveAPI/Conclave/obj/
+
+/ConclaveAPI/Conclave.Tests/bin/
+/ConclaveAPI/Conclave.Tests/obj/
+
+*.user
+
+# Others
+/scripts/
